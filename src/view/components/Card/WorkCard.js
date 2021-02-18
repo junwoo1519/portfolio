@@ -1,11 +1,14 @@
 import React from "react";
 import styled from "styled-components";
+import Tags from "../Tags";
 
-const AboutCard = ({
+const WorksCard = ({
                        title,
                        description,
                        img,
+                       tags
                    }) => {
+
     return (
         <Container>
             <Thumb>
@@ -19,6 +22,7 @@ const AboutCard = ({
                 </h3>
                 <p>{description}</p>
             </Desc>
+            <Tags tags={tags}/>
         </Container>
     )
 }
@@ -26,7 +30,8 @@ const AboutCard = ({
 const Container = styled.div`
 `;
 
-const Thumb = styled.div`
+const Thumb = styled.a`
+  display: block;
   margin-bottom: 20px;
   border-radius: 9px;
   overflow: hidden;
@@ -39,6 +44,7 @@ const Thumb = styled.div`
 `;
 
 const Desc = styled.div`
+  margin-bottom: 15px;
   h3 {
     font-size: 18px;
     font-weight: 500;
@@ -55,4 +61,4 @@ const Desc = styled.div`
   }
 `;
 
-export default AboutCard;
+export default WorksCard;

@@ -7,16 +7,12 @@ import SectionTitle from "../Title/SectionTitle";
 import {appData} from "../../../data";
 
 
-const About = () => {
+const Skills = () => {
 
     return (
-        <Container name={"about"}>
+        <Container name={"skills"}>
             <ContentContainer>
-                <SectionTitle title={appData.about.title} description={appData.about.description}/>
-                <List data={appData.about.items}
-                      renderItem={(item) => <AboutCard {...item}/>}
-                />
-
+                <SectionTitle title={appData.skills.title} description={appData.skills.description}/>
             </ContentContainer>
         </Container>
     )
@@ -26,4 +22,4 @@ const Container = styled(SectionContainer)`
 
 `;
 
-export default About;
+export default Skills;
