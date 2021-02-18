@@ -1,4 +1,5 @@
 import moment from 'moment';
+import {Link, Element, Events, animateScroll as scroll, scrollSpy, scroller} from "react-scroll";
 
 const THOUSAND_COMMA_REGEX = /(\d)(?=(\d{3})+\b)/g;
 
@@ -70,4 +71,12 @@ export const tenThousandFormat = (n) => {
 export const scrollToContent = (el) => {
     const oft = el.offsetTop - 200;
     window.scrollTo(0, oft);
+};
+
+export const scrollToTop = (options) => {
+    scroll.scrollToTop(options)
+};
+
+export const scrollTo = (name, options) => {
+    scroller.scrollTo({name, options})
 };

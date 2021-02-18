@@ -7,23 +7,19 @@ import SectionTitle from "../Title/SectionTitle";
 import {appData} from "../../../data";
 
 
-const About = () => {
+const Contact = () => {
 
     return (
-        <Container name={"about"}>
+        <Container name={"Contact"}>
             <ContentContainer>
-                <SectionTitle title={appData.about.title} description={appData.about.description}/>
-                <List data={appData.about.items}
-                      renderItem={(item) => <AboutCard {...item}/>}
-                />
-
+                <SectionTitle title={appData.contact.title} description={appData.contact.description}/>
             </ContentContainer>
         </Container>
     )
 }
 
 const Container = styled(SectionContainer)`
-
+  background-color:#f7f8f9;
 `;
 
-export default About;
+export default Contact;

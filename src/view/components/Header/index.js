@@ -1,19 +1,26 @@
 import React from 'react'
 import styled from 'styled-components';
 import Nav from "./Nav";
+import cn from "classnames";
+import {useActiveByScroll} from "../../../hooks/useActiveByScroll";
+import {setBoxShadow} from "../../../styled/Util.Styled";
 
 const menus = [
     {
         name: "home",
+        to: "visual"
     },
     {
-        name: "about"
+        name: "about",
+        to: "about"
     },
     {
-        name: "works"
+        name: "works",
+        to: "works"
     },
     {
-        name: "skills"
+        name: "skills",
+        to: "skills"
     },
     {
         name: "contact"
@@ -22,8 +29,10 @@ const menus = [
 
 const Header = () => {
 
+    const isActive = useActiveByScroll(window.innerHeight * 0.6);
+
     return (
-        <Container>
+        <Container className={cn({isActive})}>
             <Logo/>
             <Nav menus={menus}/>
         </Container>
@@ -40,13 +49,25 @@ const Container = styled.div`
   right: 0;
   z-index: 1000;
   padding: 0 50px;
+  transition: .4s;
+
+  &.isActive {
+    background-color: #fff;
+    box-shadow: ${setBoxShadow()};
+  }
 `;
 
 const Logo = styled.div`
   font-size: 22px;
   text-transform: uppercase;
   color: #fff;
-  cursor:pointer;
+  cursor: pointer;
+  transition: .4s;
+
+  .isActive & {
+    color: #333;
+  }
+
 `;
 
 export default Header;
