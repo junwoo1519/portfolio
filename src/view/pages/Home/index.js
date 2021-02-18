@@ -1,11 +1,12 @@
 import React from 'react'
 import styled from 'styled-components';
+import Visual from "../../components/Sections/Visual";
 
 const Home = () => {
     
     return (
         <Container>
-            Home
+            <Visual/>
         </Container>
     )
 }
