@@ -1,13 +1,33 @@
-import React from "react";
+import React, {useState} from "react";
 import styled from "styled-components";
 import {Overlay} from "../Layout/Layout.Styled";
 import {shine} from "../../../styled/Motion.Stuled";
-
+import {scroller} from "react-scroll";
 
 
 const Visual = () => {
+
+    const [scrolled, setScrolled] = useState(true);
+    const onWheel = (e) => {
+        if (e.deltaY > 0) {
+            if (scrolled) {
+                scroller.scrollTo('about', {
+                    smooth: true,
+                    offset: -70,
+                    duration: 500,
+                    ignoreCancelEvents: true
+                })
+                setScrolled(false);
+                setTimeout(() => {
+                    setScrolled(true)
+                }, 1000)
+            }
+        }
+    }
+
     return (
-        <Container>
+        <Container name={"visual"}
+                   onScroll={onWheel}>
             <StyledOverlay/>
             <Contents>
                 <h1>Go</h1>
@@ -38,7 +58,7 @@ const Contents = styled.div`
 `;
 
 const StyledOverlay = styled(Overlay)`
-    animation: ${shine} 5s ease-in forwards;
+  animation: ${shine} 5s ease-in forwards;
 `;
 
 export default Visual;
