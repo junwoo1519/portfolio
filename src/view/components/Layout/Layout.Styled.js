@@ -47,6 +47,5 @@ export const Overlay = styled.div`
     bottom: 0;
     left: 0;
     right: 0;
-    cursor:pointer;
     background-color:rgba(0,0,0, ${props => (props.alpha || 0.6)});
 `;
