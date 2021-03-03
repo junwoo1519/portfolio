@@ -29,7 +29,7 @@ const Row = styled.div`
 `;
 
 const Col = styled.div`
-    width: 33.3333%;
+  width: 33.3333%;
   padding: 12px;
 `;
 
