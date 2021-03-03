@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import styled from 'styled-components';
 import {GlobalStyle} from "../styled/Reset.Styled";
 import Routes from "./routes/Routes";

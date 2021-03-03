@@ -1,7 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import List from "../List";
-import AboutCard from "../Card/AboutCard";
 import {ContentContainer, SectionContainer} from "../Layout/Layout.Styled";
 import SectionTitle from "../Title/SectionTitle";
 import {appData} from "../../../data";
