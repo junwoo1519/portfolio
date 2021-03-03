@@ -1,5 +1,5 @@
 import moment from 'moment';
-import {Link, Element, Events, animateScroll as scroll, scrollSpy, scroller} from "react-scroll";
+import {animateScroll as scroll, scroller} from "react-scroll";
 
 const THOUSAND_COMMA_REGEX = /(\d)(?=(\d{3})+\b)/g;
 

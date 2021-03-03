@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import {ContentContainer, SectionContainer} from "../Layout/Layout.Styled";
-import AboutCard from "../Card/AboutCard";
 import List from "../List";
 import WorksCard from "../Card/WorkCard";
 import SectionTitle from "../Title/SectionTitle";
