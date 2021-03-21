@@ -5,6 +5,7 @@ import List from "../List";
 import WorksCard from "../Card/WorkCard";
 import SectionTitle from "../Title/SectionTitle";
 import {appData} from "../../../data";
+import {FaLink} from "react-icons/all";
 
 const Works = () => {
 
@@ -23,7 +24,8 @@ const Works = () => {
 }
 
 const Container = styled(SectionContainer)`
-  background-color:#f7f8f9;
+  position: relative;
+  background-color: #f7f8f9;
 `;
 
 export default Works;
