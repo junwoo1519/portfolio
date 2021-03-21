@@ -5,7 +5,6 @@ import List from "../List";
 import WorksCard from "../Card/WorkCard";
 import SectionTitle from "../Title/SectionTitle";
 import {appData} from "../../../data";
-import {FaLink} from "react-icons/all";
 
 const Works = () => {
 
