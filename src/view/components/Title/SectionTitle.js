@@ -27,7 +27,7 @@ const Container = styled.div`
   }
 
   p {
-    font-size: 20px;
+    font-size: 17px;
     color: #777;
     line-height: 1.5;
     font-weight: 400;

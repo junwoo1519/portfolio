@@ -27,9 +27,11 @@ const Container = styled.div`
 `;
 
 const Thumb = styled.div`
+  display: block;
   margin-bottom: 20px;
   border-radius: 9px;
   overflow: hidden;
+  box-shadow: 0 0 5px #aaaaaa;
 
   img {
     height: 200px;
@@ -42,7 +44,7 @@ const Desc = styled.div`
   h3 {
     font-size: 18px;
     font-weight: 500;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     text-transform: capitalize;
     color: #333;
   }

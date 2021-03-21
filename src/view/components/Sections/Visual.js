@@ -30,7 +30,8 @@ const Visual = () => {
                    onScroll={onWheel}>
             <StyledOverlay/>
             <Contents>
-                <h1>Go</h1>
+                <h1>Try it!</h1>
+                <p>도전하는 Developer 이준우 입니다.</p>
             </Contents>
         </Container>
     )
@@ -47,13 +48,24 @@ const Container = styled.div`
 
 const Contents = styled.div`
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   h1 {
     white-space: nowrap;
     color: #fff;
     font-size: 50px;
     font-weight: bold;
-    text-transform: uppercase;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+  }
+  
+  p {
+    white-space: nowrap;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
   }
 `;
 

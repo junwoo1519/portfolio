@@ -35,6 +35,7 @@ const Thumb = styled.a`
   margin-bottom: 20px;
   border-radius: 9px;
   overflow: hidden;
+  box-shadow: 0 0 5px #aaaaaa;
 
   img {
     height: 200px;
