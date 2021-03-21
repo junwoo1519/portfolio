@@ -16,7 +16,6 @@ const About = () => {
                 <List data={appData.about.items}
                       renderItem={(item) => <AboutCard {...item}/>}
                 />
-
             </ContentContainer>
         </Container>
     )
